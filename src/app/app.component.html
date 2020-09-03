@@ -1,0 +1,22 @@
+<div class="main-container">
+  <h1 class="header" > 
+  Deloitte Screening Test
+</h1>
+
+<!-- Creating complaint management system -->
+<h2> Complaint management system </h2>
+<strong>Please enter complaints in the text box below </strong>
+<div class="response-box">
+  <div class="enteredResponse"> <input #ref type = "text"> </div>
+  <div class=".btn-primary "><button class="addBtn" (click)= "add(ref.value)"> + Add &nbsp;</button> </div>
+</div>
+ <p>Registered Complaints</p>
+<div class="list-complaints">
+
+  <div *ngFor="let com of complaints" class="complaint"> 
+
+  <span>{{com}}</span>
+
+  </div>
+</div>
+</div>
